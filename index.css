@@ -1,0 +1,80 @@
+:root {
+    --color-background: rgb(61, 17, 6);
+    --color-lightbackground: rgb(243, 90, 2);
+    --color-light: #fff;
+}
+
+html {
+    margin-top: 4rem;
+    background: var(--color-background);
+    /* padding: .8rem; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    padding: .2;
+    border: 3px solid var(--color-background);
+    width: auto;
+    height: 27vh;
+    background: var(--color-background);
+
+}
+
+.box {
+    border: 3px solid var(--color-background);
+    width: 50%;
+    height: 100%;
+    color: var(--color-light);
+    text-align: left;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: translateX(0px);
+    }
+
+    5% {
+        transform: rotateY(-660deg);
+    }
+
+    /* 10%{transform:  rotateX(360deg) rotateY(360deg)rotateZ(30deg);} */
+    /* 10%{ transform: rotateZ(360deg);} */
+}
+
+#desktop-logo {
+    width: 90%;
+    height: 80%;
+    animation-name: rotate2;
+    transition: 1s;
+    animation: rotate2;
+    animation: rotate2 10s;
+    animation-iteration-count: infinite;
+    perspective: (1500px);
+}
+
+div {
+    background: var(--color-background);
+}
+
+.container {
+    background: var(--color-background);
+    border: 0;
+    color: var(--color-light);
+    padding: 1rem;
+    margin: 0;
+    outline: 0;
+}
+
+.container-fluid2 {
+    background: var(--color-light);
+    border-left: 7px solid var(--color-lightbackground);
+    padding: 1rem;
+}
+
+h3 {
+    font-weight: 900;
+    color: var(--color-background);
+}
